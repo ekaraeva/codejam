@@ -11,4 +11,3 @@ function randomGreen() {
     console.log(greenCards[i]) ;
 }
 randomGreen()
-
