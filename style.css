@@ -5,8 +5,8 @@
 }
 .main{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    gap: 80px;
 }
 button{
     width: 150px;
@@ -21,8 +21,8 @@ button:focus{
     color: green;
 }
 .card{
-    width: 150px;
-    height: 250px;
+    width:350px;
+    height: 450px;
     border: none;
     cursor: pointer;
 }
@@ -32,22 +32,23 @@ button:focus{
 .cthulthu{
     background-image: url('./assets/Ancients/Cthulthu.png');
     background-size: cover;
-    grid-area: cthulthu;
 }
 .azathoth{
     background-image: url('./assets/Ancients/Azathoth.png');
     background-size: cover;
-    grid-area: azathoth;
 }
 .iogSothoth{
     background-image: url('./assets/Ancients/IogSothoth.png');
     background-size: cover;
-    grid-area: iogSothoth;
 }
 .shubNiggurath{
     background-image: url('./assets/Ancients/ShubNiggurath.png');
     background-size: cover;
-    grid-area: shubNiggurath;
+}
+.btns{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .pack{
@@ -60,16 +61,14 @@ button:focus{
     width: 200px;
     height: 250px;
     flex-grow: 1;
-    background-image: url('https://github.com/ekaraeva/eldritch-codejam/blob/main/assets/MythicCards/blue/blue1.png');
+    background-image: url('./assets/mythicCardBackground.png');
     background-size: cover;
     cursor: pointer;
 }
 .ancients{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5px;
-    grid-template-areas: "cthulthu azathoth"
-                        "iogSothoth shubNiggurath";
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
 }
 .round-container{
     display: flex;
